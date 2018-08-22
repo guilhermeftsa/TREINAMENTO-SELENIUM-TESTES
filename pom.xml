@@ -4,6 +4,22 @@
   <artifactId>AplicacaoRealTreino</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <build>
+  	<testSourceDirectory>src</testSourceDirectory>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-surefire-plugin</artifactId>
+  			<version>2.18.1</version>
+  			<configuration>
+  				<includes>
+  					<include>treinamento/guilherme/suites/*.java</include>
+  				</includes>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
   <dependencies>
   	<dependency>
   	<groupId>org.seleniumhq.selenium</groupId>
